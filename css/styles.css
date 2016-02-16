@@ -18,11 +18,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #d3d3d3;
 }
 
 .container {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 header {
@@ -30,13 +32,136 @@ header {
   height: 30%;
 }
 
+h1 {
+  padding: 0;
+  text-align: center;
+}
+
+#navbar {
+  height: 100%;
+}
+
 #navbar ul {
   list-style: none;
   padding-left: 0;
-
+  margin: 0 auto;
+  overflow: auto;
 }
 
 #navbar li {
   display: inline-block;
   padding-right: 15px;
+}
+
+#gallery {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  /*height: 70%;*/
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 500px) {
+ .galleryItem {
+   float: right;
+   width: 48%;
+   margin: 1%;
+   height: 450px;
+   overflow: hidden;
+ }
+
+#gallery {
+  padding-right: .5em;
+  }
+
+  #navbar {
+    overflow: auto;
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 1%;
+  }
+
+  h2 {
+    float: left;
+    font-size: 40px;
+    width: 40%;
+    margin: 10px;
+  }
+
+  #navbar ul {
+    float: right;
+    margin-top: 25px;
+    margin-right: 15px;
+  }
+
+  #navbar a {
+   text-decoration: none;
+   font-size: 14px;
+   display: inline;
+  }
+
+  .galleryItem p {
+    font-size: 14px;
+    padding: 0px 8px;
+  }
+
+  .galleryItem h3 {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (min-width: 970px) {
+  .galleryItem {
+    float: right;
+    width: 23%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  #navbar {
+    overflow: auto;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 2%;
+  }
+
+  h2 {
+    float: left;
+    font-size: 50px;
+    width: 40%;
+    margin: 15px;
+  }
+
+  #navbar ul {
+    float: right;
+    margin-top: 35px;
+    margin-right: 22px;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .galleryItem p {
+    font-size: 18px;
+    padding: 0px 8px;
+  }
+
+  .galleryItem h3 {
+    font-size: 22px;
+  }
 }
